@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { HomeIcon, BriefcaseIcon, EnvelopeIcon, RectangleStackIcon } from '@heroicons/react/24/outline';
 import { HomeIcon as HomeSolidIcon, HomeIcon as HomeOutlineIcon, RectangleStackIcon as StackSolidIcon, RectangleStackIcon as StackOutlineIcon, BriefcaseIcon as BriefcaseSolidIcon, BriefcaseIcon as BriefcaseOutlineIcon, EnvelopeIcon as EnvelopeSolidIcon, EnvelopeIcon as EnvelopeOutlineIcon } from '@heroicons/react/24/solid';
 import swiggy from '../assets/DeliveryPartner/swiggy.png';
-import eatsure from '../assets/DeliveryPartner/eatsure.png';
+// import eatsure from '../assets/DeliveryPartner/eatsure.png';
 import zomato from '../assets/DeliveryPartner/zomato.jpg';
-import figmaImage from '../assets/skills/figma.png';
+// import figmaImage from '../assets/skills/figma.png';
 import Banner from './Banner';
 import { NavbarComp } from './NavbarComp';
 
@@ -28,10 +28,7 @@ function Home() {
         },{ 
             title: "zomato",
             imageSrc: zomato
-        },{ 
-            title: "eatsure",
-            imageSrc: eatsure
-        },
+        }
         
     ];
 
@@ -63,7 +60,6 @@ function Home() {
                                     <div className='flex justify-center  items-center '>
                                         {/* <h2 className=' text-center uppercase font-semibold text-[#79ff5e] '>{item.title}</h2> */}
                                     </div>
-
                                 </div>
                             </div>
                         ))}
