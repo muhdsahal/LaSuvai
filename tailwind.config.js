@@ -1,4 +1,4 @@
-const withMT = require("@material-tailwind/react/utils/withMT");
+import withMT from "@material-tailwind/react/utils/withMT";
  
 module.exports = withMT({
   content: [
@@ -11,3 +11,24 @@ module.exports = withMT({
   },
   plugins: [],
 });
+
+
+// import { defineConfig } from 'tailwindcss';
+
+// export default defineConfig({
+//   content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// });
+
+// import { defineConfig } from 'tailwindcss';
+
+// export default defineConfig({
+//   content: ['./src/**/*.{js,jsx,ts,tsx,html}'], // Include the correct file paths
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [],
+// });
