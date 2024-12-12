@@ -2,35 +2,42 @@ import { Typography } from '@material-tailwind/react'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp, faInstagram, } from '@fortawesome/free-brands-svg-icons';
-import mail from '../assets/Icons/email.png'
-import whatsapp from '../assets/Icons/wpp.png'
-import phone from '../assets/Icons/phone.png'
+import mail from '../assets/Icons/mail.png'
+import whatsapp from '../assets/Icons/whatsapp.png'
+import phone from '../assets/Icons/phone-call.png'
 import instagram from '../assets/Icons/instagram.png'
+import location from '../assets/Icons/location.png'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FaLocationArrow } from 'react-icons/fa6'
 
 function Contact() {
     return (
         <div className='w-full h-full bg-[#1e8f58]'>
             <div className='flex flex-wrap justify-center items-center mt-4'>
-                <Typography className='text-4xl justify-center font-serif text-white'>Contact Us</Typography>
+                <Typography className='text-4xl justify-center font-serif text-white mb-10'>Contact Us</Typography>
             </div>
+
             <div className='flex flex-wrap justify-center gap-10'>
-                <div className='text-start flex flex-col gap-5  text-white p-5 mt-10'>
-                    <div className='flex items-start'>
-                        <img src={mail} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
-                        <Typography className='text-3xl font-serif mt-0 ml-3'>lasuvai@gmail.com</Typography>
-                    </div>
-                    <div className='flex items-start'>
-                        <img src={whatsapp} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
-                        <Typography className='text-3xl font-serif mt-0 ml-3'>Whats App </Typography>
-                    </div>
-                    <div className='flex items-start'>
-                        <img src={instagram} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
-                        <Typography className='text-3xl font-serif mt-0 ml-3'>Instagram</Typography>
-                    </div>
-                    <div className='flex items-start'>
-                        <img src={phone} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
-                        <Typography className='text-3xl font-serif mt-0 ml-3'>+91 9876543210</Typography>
-                    </div>
+                <div className='text-start flex flex-col gap-3 ml-2 text-white p-5'>
+                    <Typography className='pl-5 text-3xl font-serif'>Address</Typography>
+                    <p className="text-left mt-4 font-light">
+                        <span className="flex items-start flex-col gap-1 relative text-[#bbb9b9dc] transition duration-300 ease-out">
+                            <div className="max-w-xs">
+                                <div className="flex text-start items-start pl-3">
+                                    {/* <FontAwesomeIcon icon={faLocationArrow} className="h-5 w-5 text-4xl text-[#ba4b29]" /> */}
+                                    <img src={location} alt="" />
+                                    <div className="text-base font-serif text-white">
+                                        <p className=" px-2 text-xl">42A/A, 2nd Floor,</p>
+                                        <p className='px-2 text-xl'>Sarjapura - Marathahalli Rd,</p>
+                                        <p className='px-2 text-xl'>Jakkasandra, 1st Block Koramangala,</p>
+                                        <p className='px-2 text-xl'>Bangalore 560034</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </p>
+
+
                 </div>
                 <div className='ml-5 mr-5 mb-5'>
                     <div className=''>
@@ -50,11 +57,31 @@ function Contact() {
                 {/* <FontAwesomeIcon icon={faWhatsapp} /> */}
                 {/* <FontAwesomeIcon icon="fa-brands fa-whatsapp" /> */}
             </div>
+            <div className='flex flex-wrap justify-center items-center gap-5 mb-10 text-white'>
+
+
+                <div className='flex items-start'>
+                    <img src={mail} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
+                    <Typography className='text-3xl font-serif mt-0 ml-3'>lasuvai@gmail.com</Typography>
+                </div>
+                <div className='flex items-start'>
+                    <img src={whatsapp} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
+                    <Typography className='text-3xl font-serif mt-0 ml-3'>Whats App </Typography>
+                </div>
+                <div className='flex items-start'>
+                    <img src={instagram} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
+                    <Typography className='text-3xl font-serif mt-0 ml-3'>Instagram</Typography>
+                </div>
+                <div className='flex items-start'>
+                    <img src={phone} alt="" className="w-10 h-10 sm:w-10 sm:h-10 md:w-10 md:h-10" />
+                    <Typography className='text-3xl font-serif mt-0 ml-3'>+91 6366369915</Typography>
+                </div>
+                </div>
 
 
 
-        </div>
-    )
+            </div>
+            )
 }
 
-export default Contact
+            export default Contact
