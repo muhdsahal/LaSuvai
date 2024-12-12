@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {Navbar,Collapse,Typography,Button,IconButton,Input,Menu,MenuHandler,MenuList,MenuItem} from "@material-tailwind/react";
 import {ChevronDownIcon,ShoppingBagIcon,MagnifyingGlassIcon,Bars3Icon,XMarkIcon,} from "@heroicons/react/24/outline";
-import LaSuvai from '../assets/lasuvai.png'
+import LaSuvai from '../assets/logo_lasuvai.png'
 
 function NavList() {
     // const [isMenuOpen, setIsMenuOpen] = useState(false);

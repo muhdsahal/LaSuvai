@@ -15,13 +15,13 @@ import ctr4 from "../assets/ctr_img4.jpg";
 const slides = [
   {
     image: corperate_catering,
-    title: "corporate catering",
+    title: "Corporate Catering",
     description:
       `We offer premium corporate catering services, providing a wide range of delicious and professionally prepared meals for businesses. From breakfast spreads to executive lunches and customized event menus, we ensure a seamless and satisfying experience for your team and guests. Our service is designed to meet diverse dietary preferences, delivering quality food that enhances your corporate gatherings, meetings, and events. With attention to detail and excellent customer service, we aim to exceed expectations and make your business occasions memorable.`
   },
   {
     image: corperate_events,
-    title: "corporate events",
+    title: "Corporate Events",
     description:
       `We specialize in providing exceptional food for corporate events, offering a variety of menus tailored to your needs. Whether it's a formal meeting, conference, or company celebration, we deliver high-quality meals that impress and satisfy. From elegant plated dinners to casual buffets and refreshments, our team ensures your guests enjoy a seamless dining experience. We cater to diverse tastes and dietary requirements, making every corporate event memorable with delicious food and impeccable service.`
   },
@@ -33,14 +33,14 @@ const slides = [
   },
   {
     image: weekly_meal,
-    title: "weekly meal plans",
+    title: "Weekly Meal Plans",
     description:
       ` We offer convenient weekly meal plans, providing nutritious and delicious meals tailored to your dietary preferences and needs. Each plan is designed to save you time and effort, with freshly prepared meals delivered right to your door. Whether you're looking for balanced meals, vegetarian options, or specialized diets, we ensure variety and quality in every week's menu.`
 
   },
   {
     image: online_delivery,
-    title: "online delivery",
+    title: "Online Delivery",
     description:
       `We offer fast and reliable online food delivery, bringing delicious meals straight to your door. With a wide variety of options to choose from, our service caters to different tastes and dietary needs, ensuring a convenient and satisfying dining experience. Whether you're craving comfort food or healthy meals, we make it easy to enjoy quality food with just a few clicks.`
   },
@@ -80,12 +80,12 @@ function Banner() {
                 />
               </div>
               <div className="flex flex-col justify-center p-8">
-                <Typography   className="mb-4 font-serif text-[#edc35e] text-4xl">
+                <h1   className="mb-4 font-extralight text-[#edc35e] text-5xl">
                   {slide.title}
-                </Typography>
-                <Typography className="mb-8 font-semibold text-[#edc35e]">
+                </h1>
+                <p className="mb-8 font-extralight text-xl  text-white">
                   {slide.description}
-                </Typography>
+                </p>
                 <div>
                 </div>
               </div>

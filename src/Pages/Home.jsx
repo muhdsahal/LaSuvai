@@ -28,12 +28,13 @@ function Home() {
                 <NavbarComp/>
                 <div>
                     <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} >
-                        <h1 className='text-[#FAFAFA] pl-1 pr-1 mt-3  text-center text-xl sm:text-6xl font-semibold  animate-pulse'><span className='opacity-50 text-[#edc35e]'>Best  </span><span className='text-[white]'>Corporate Caterers in</span><span className='opacity-50 text-[#edc35e]'> Banglore </span></h1>
+                        <h1 className='text-[#FAFAFA] pl-1 pr-1 mt-3  text-center text-xl sm:text-6xl font-semibold  animate-pulse'><span className='opacity-50 text-[#edc35e]'>Leading  </span><span className='text-[white]'>Corporate Catering Services in</span><span className='opacity-50 text-[#edc35e]'>Banglore </span></h1>
                     </motion.div>
                     <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} className='sm:pl-32 sm:pr-32 p-5 pt-14 pb-14' >
                         <p className='text-[#FAFAFA] opacity-70 font-extralight text-center sm:text-2xl'>
-                        Welcome to LA SUVAI Platform by Best Caterers in Bangalore! We offer delicious food, top-notch service, and memorable experiences.
-                        Let us make your events special with our wide range of dishes and careful attention to every detail. Enjoy the best flavors and warm hospitality with us. Welcome to great dining!</p>
+
+                        Our Cloud Kitchen, we take pride in offering high-quality catering services for corporate events, daily office meals, and flexible weekly meal plans, all delivered right to your office door. Whether you’re hosting a corporate seminar, planning a team lunch, or looking for nutritious meals throughout the workweek, our cloud kitchen ensures every meal is freshly prepared, nutritious, and bursting with flavor.
+                       </p>
                     </motion.div>
                     <Banner/>
                     <Faq/>

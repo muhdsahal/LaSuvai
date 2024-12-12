@@ -26,7 +26,7 @@ function Faq() {
 
     return (
         <div className='w-full h-full bg-[#1e8f58] mt-10'>
-            <Typography className='text-center text-4xl font-serif text-white mb-6'>FAQ</Typography>
+            <h3 className='text-center text-4xl font-extralight text-white mb-6'>FAQ</h3>
             <div className='flex flex-col items-center'>
                 {faqData.map((faq, index) => (
                     <div key={index} className='w-1/2 mb-4'>
@@ -35,7 +35,7 @@ function Faq() {
                             className='flex justify-between items-center cursor-pointer p-3 border-[2px] border-black bg-white'
                             onClick={() => toggleQuestion(index)}
                         >
-                            <Typography className='text-xl font-serif'>{faq.question}</Typography>
+                            <p className='text-xl font-extralight'>{faq.question}</p>
                             {/* Arrow icon toggles based on state */}
                             {openQuestion === index ? (
                                 <FaChevronUp className='text-xl text-gray-500' />
@@ -46,7 +46,7 @@ function Faq() {
                         {/* Answer container */}
                         {openQuestion === index && (
                             <div className='p-3 border-[2px] border-t-0 border-black bg-gray-100'>
-                                <Typography className='text-lg font-serif'>{faq.answer}</Typography>
+                                <p className='text-lg font-extralight'>{faq.answer}</p>
                             </div>
                         )}
                     </div>
