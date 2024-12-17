@@ -25,14 +25,14 @@ function Faq() {
     ];
 
     return (
-        <div className='w-full h-full bg-[#1e8f58] mt-10'>
-            <h3 className='text-center text-4xl font-extralight text-white mb-6'>FAQ</h3>
+        <div className='w-full h-full bg-white'>
+            <h3 className='text-center text-4xl font-extralight text-[#ac3967]'>FAQ</h3>
             <div className='flex flex-col items-center'>
                 {faqData.map((faq, index) => (
                     <div key={index} className='w-1/2 mb-4'>
                         {/* Question container */}
                         <div
-                            className='flex justify-between items-center cursor-pointer p-3 border-[2px] border-black bg-white'
+                            className='flex justify-between items-center text-[#ac3967] cursor-pointer p-3 border-[2px] border-[#ac3967] bg-white'
                             onClick={() => toggleQuestion(index)}
                         >
                             <p className='text-xl font-extralight'>{faq.question}</p>
@@ -45,8 +45,8 @@ function Faq() {
                         </div>
                         {/* Answer container */}
                         {openQuestion === index && (
-                            <div className='p-3 border-[2px] border-t-0 border-black bg-gray-100'>
-                                <p className='text-lg font-extralight'>{faq.answer}</p>
+                            <div className='p-3 border-[2px] border-t-0 border-[#ac3967] bg-gray-100'>
+                                <p className='text-lg text-[#ac3967] font-extralight'>{faq.answer}</p>
                             </div>
                         )}
                     </div>

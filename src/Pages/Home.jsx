@@ -10,6 +10,7 @@ import Services from './Services';
 import FooterComp from './FooterComp';
 import Contact from './Contact';
 import Faq from './Faq';
+import Menu from './Menu';
 
 function Home() {
     const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -24,11 +25,11 @@ function Home() {
 
     return (
         <div className='flex flex-col justify-between overflow-x-hidden'>
-            <div className='bg-[#1e8f58]'>
                 <NavbarComp/>
+            <div className='bg-[#ac3967]'>
                 <div>
                     <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} >
-                        <h1 className='text-[#FAFAFA] pl-1 pr-1 mt-3  text-center text-xl sm:text-6xl font-semibold  animate-pulse'><span className='opacity-50 text-[#edc35e]'>Leading  </span><span className='text-[white]'>Corporate Catering Services in</span><span className='opacity-50 text-[#edc35e]'>Banglore </span></h1>
+                        <h1 className='text-[#FAFAFA] pl-1 pr-1 mt-3  text-center text-xl sm:text-6xl font-semibold  animate-pulse'><span className='opacity-50 text-[#edc35e]'>Leading  </span><span className='text-[white]'>Corporate Catering Services in </span><span className='opacity-50 text-[#edc35e]'>Banglore </span></h1>
                     </motion.div>
                     <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} className='sm:pl-32 sm:pr-32 p-5 pt-14 pb-14' >
                         <p className='text-[#FAFAFA] opacity-70 font-extralight text-center sm:text-2xl'>
@@ -37,6 +38,7 @@ function Home() {
                        </p>
                     </motion.div>
                     <Banner/>
+                    <Menu/>
                     <Faq/>
                     <Contact/>
                 </div>

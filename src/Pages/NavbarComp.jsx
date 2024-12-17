@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {Navbar,Collapse,Typography,Button,IconButton,Input,Menu,MenuHandler,MenuList,MenuItem} from "@material-tailwind/react";
-import {ChevronDownIcon,ShoppingBagIcon,MagnifyingGlassIcon,Bars3Icon,XMarkIcon,} from "@heroicons/react/24/outline";
+import { Navbar, Collapse, Typography, Button, IconButton, Input, Menu, MenuHandler, MenuList, MenuItem } from "@material-tailwind/react";
+import { ChevronDownIcon, ShoppingBagIcon, MagnifyingGlassIcon, Bars3Icon, XMarkIcon, } from "@heroicons/react/24/outline";
 import LaSuvai from '../assets/logo_lasuvai.png'
 
 function NavList() {
@@ -27,14 +27,14 @@ export function NavbarComp() {
     return (
         <div className="flex flex-col">
             {/* bg-gradient-to-l from-[#cbb539] via-[#fafafa] to-[#cbb539] */}
-            <div className="mx-auto w-full px-6 py-3  mt-3 bg-[#edc35e] rounded-t-3xl" >
+            <div className="mx-auto w-full px-6 py-3 bg-[#ac3967]" >
                 <div className="flex items-center justify-between text-white">
                     <img src={LaSuvai} className="w-32 h-16" alt="" />
                     <div className="hidden lg:block">
                         <NavList />
                     </div>
                     <br />
-                    
+
                     <IconButton
                         variant="text"
                         color="white"
@@ -53,6 +53,7 @@ export function NavbarComp() {
                     <NavList />
                 </Collapse>
             </div>
+            <hr className="h-0.5 bg-gray-300 border-0" />
         </div>
     );
 }
